@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support — Soulvy</title>
+    <meta name="description" content="Get help with Soulvy apps. Contact support and find answers to common questions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #fafafa; --text: #1d1d1f; --text-secondary: #6e6e73;
+            --accent: #0071e3; --card-bg: #ffffff; --card-border: rgba(0,0,0,0.06);
+            --section-bg: #f5f5f7;
+        }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+        nav { position: fixed; top: 0; width: 100%; z-index: 100; background: rgba(250,250,250,0.85); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--card-border); }
+        .nav-inner { max-width: 980px; margin: 0 auto; padding: 16px 24px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.25rem; font-weight: 700; letter-spacing: -0.02em; color: var(--text); text-decoration: none; }
+        .logo span { color: var(--accent); }
+        .nav-links { display: flex; gap: 24px; }
+        .nav-links a { color: var(--text-secondary); text-decoration: none; font-size: 0.875rem; font-weight: 500; }
+        .nav-links a:hover { color: var(--text); }
+        .content { max-width: 720px; margin: 0 auto; padding: 140px 24px 80px; }
+        .content h1 { font-size: clamp(2rem, 5vw, 2.75rem); font-weight: 700; letter-spacing: -0.03em; margin-bottom: 8px; }
+        .content .subtitle { color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 48px; }
+        .section-label { font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 12px; }
+        .content h2 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 24px; }
+        .content p { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 12px; }
+        .content a { color: var(--accent); text-decoration: none; }
+        .content a:hover { text-decoration: underline; }
+        .contact-box { background: var(--section-bg); border-radius: 20px; padding: 36px 28px; margin-bottom: 56px; text-align: center; }
+        .contact-box p { margin-bottom: 20px; }
+        .contact-btn { display: inline-block; padding: 14px 32px; border: 2px solid var(--text); border-radius: 980px; color: var(--text); text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: all 0.2s; }
+        .contact-btn:hover { background: var(--text); color: var(--bg); text-decoration: none; }
+        .faq-item { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px; padding: 24px 28px; margin-bottom: 12px; }
+        .faq-item h3 { font-size: 1rem; font-weight: 600; margin-bottom: 8px; color: var(--text); }
+        .faq-item p { margin-bottom: 0; }
+        .apps-section { margin-top: 56px; }
+        .app-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 20px; }
+        .app-link { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 14px; padding: 18px 20px; text-decoration: none; color: var(--text); font-weight: 500; font-size: 0.95rem; transition: transform 0.2s, box-shadow 0.2s; display: flex; align-items: center; gap: 12px; }
+        .app-link:hover { transform: translateY(-1px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); text-decoration: none; }
+        .app-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+        footer { padding: 40px 24px; text-align: center; font-size: 0.8rem; color: var(--text-secondary); border-top: 1px solid var(--card-border); }
+        footer a { color: var(--text-secondary); text-decoration: none; }
+        footer a:hover { color: var(--text); }
+        footer span { margin: 0 8px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="/" class="logo">soulvy<span>.</span></a>
+        <div class="nav-links">
+            <a href="/privacy">Privacy</a>
+            <a href="mailto:theobrooks92@gmail.com">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<div class="content">
+    <h1>Support</h1>
+    <p class="subtitle">We're here to help. Find answers below or reach out directly.</p>
+
+    <div class="contact-box">
+        <p>For any questions, issues, or feedback about our apps, contact us directly.</p>
+        <a href="mailto:theobrooks92@gmail.com" class="contact-btn">theobrooks92@gmail.com</a>
+    </div>
+
+    <div class="section-label">FAQ</div>
+    <h2>Common Questions</h2>
+
+    <div class="faq-item">
+        <h3>How do I reset my data?</h3>
+        <p>You can reset app data by deleting and reinstalling the app from the App Store. All locally stored data will be removed. If you use iCloud sync, your data may still be available in your iCloud account.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>How do I contact support?</h3>
+        <p>Send us an email at <a href="mailto:theobrooks92@gmail.com">theobrooks92@gmail.com</a>. We typically respond within 24–48 hours.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Is my data private?</h3>
+        <p>Yes. All Soulvy apps store data locally on your device. We do not collect, track, or share your personal information. Read our <a href="/privacy">Privacy Policy</a> for full details.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>How does iCloud sync work?</h3>
+        <p>Some apps offer optional iCloud sync through Apple's CloudKit. When enabled, your data syncs across your Apple devices via your personal iCloud account. We never access this data.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>The app is crashing. What should I do?</h3>
+        <p>Make sure you're running the latest version from the App Store. If the issue persists, try restarting your device. If it's still happening, email us with your device model and iOS version.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Can I request a feature?</h3>
+        <p>Absolutely! We love hearing from users. Send your ideas to <a href="mailto:theobrooks92@gmail.com">theobrooks92@gmail.com</a> and we'll consider them for future updates.</p>
+    </div>
+
+    <div class="apps-section">
+        <div class="section-label">Our Apps</div>
+        <h2>Get Help by App</h2>
+        <div class="app-links">
+            <a href="/kairos" class="app-link"><span class="app-dot" style="background: linear-gradient(135deg, #667eea, #764ba2);"></span> Kairos</a>
+            <a href="/#apps" class="app-link"><span class="app-dot" style="background: linear-gradient(135deg, #f093fb, #f5576c);"></span> Crisper</a>
+            <a href="/#apps" class="app-link"><span class="app-dot" style="background: linear-gradient(135deg, #4facfe, #00f2fe);"></span> FlexTime</a>
+            <a href="/#apps" class="app-link"><span class="app-dot" style="background: linear-gradient(135deg, #f5af19, #f12711);"></span> ListFlow</a>
+            <a href="/#apps" class="app-link"><span class="app-dot" style="background: linear-gradient(135deg, #a8edea, #fed6e3);"></span> DecisionFlow</a>
+            <a href="/#apps" class="app-link"><span class="app-dot" style="background: linear-gradient(135deg, #d299c2, #fef9d7);"></span> HourFlow</a>
+            <a href="/#apps" class="app-link"><span class="app-dot" style="background: linear-gradient(135deg, #89f7fe, #66a6ff);"></span> HydroFast</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Soulvy LLC. All rights reserved.<span>·</span><a href="/privacy">Privacy</a><span>·</span><a href="/support">Support</a></p>
+</footer>
+
+</body>
+</html>
