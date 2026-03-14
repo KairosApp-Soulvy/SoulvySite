@@ -44,11 +44,12 @@
         }
         .logo {
             font-size: 1.25rem; font-weight: 700; letter-spacing: -0.02em;
-            color: var(--text);
+            color: var(--text); text-decoration: none;
         }
         .logo span { color: var(--accent); }
-        nav a { color: var(--text-secondary); text-decoration: none; font-size: 0.875rem; font-weight: 500; }
-        nav a:hover { color: var(--text); }
+        .nav-links { display: flex; gap: 24px; }
+        .nav-links a { color: var(--text-secondary); text-decoration: none; font-size: 0.875rem; font-weight: 500; }
+        .nav-links a:hover { color: var(--text); }
 
         /* HERO */
         .hero {
@@ -186,6 +187,8 @@
             color: var(--text-secondary);
             border-top: 1px solid var(--card-border);
         }
+        footer a { color: var(--text-secondary); text-decoration: none; }
+        footer a:hover { color: var(--text); }
         footer span { margin: 0 8px; }
     </style>
 </head>
@@ -193,8 +196,12 @@
 
 <nav>
     <div class="nav-inner">
-        <div class="logo">soulvy<span>.</span></div>
-        <a href="mailto:theobrooks92@gmail.com">Contact</a>
+        <a href="/" class="logo">soulvy<span>.</span></a>
+        <div class="nav-links">
+            <a href="/#apps">Apps</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/support">Support</a>
+        </div>
     </div>
 </nav>
 
@@ -245,7 +252,7 @@
 </section>
 
 <footer>
-    <p>&copy; 2025 Soulvy LLC. All rights reserved.<span>·</span>Salt Lake City, Utah<span>·</span><a href="/privacy" style="color: var(--text-secondary); text-decoration: none;">Privacy</a><span>·</span><a href="/support" style="color: var(--text-secondary); text-decoration: none;">Support</a></p>
+    <p>&copy; 2026 Soulvy LLC. All rights reserved.<span>·</span><a href="/privacy">Privacy</a><span>·</span><a href="/support">Support</a></p>
 </footer>
 
 </body>
